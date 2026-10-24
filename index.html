@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youssef Osama — Junior Front-End Developer | Website Designer</title>
+<meta name="description" content="Junior front-end developer and website designer in Cairo, Egypt. Responsive websites and landing pages with HTML, CSS and JavaScript, including clinic websites.">
+<meta name="author" content="Youssef Osama">
+<meta name="theme-color" content="#0B1117">
+<link rel="canonical" href="https://youssef-osama.me/My-Portfolio/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Youssef Osama">
+<meta property="og:title" content="Youssef Osama — Junior Front-End Developer | Website Designer">
+<meta property="og:description" content="Junior front-end developer and website designer in Cairo, Egypt. Responsive websites and landing pages with HTML, CSS and JavaScript, including clinic websites.">
+<meta property="og:url" content="https://youssef-osama.me/My-Portfolio/">
+<meta property="og:image" content="https://youssef-osama.me/My-Portfolio/assets/profile.jpg">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Portrait of Youssef Osama">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Youssef Osama — Junior Front-End Developer | Website Designer">
+<meta name="twitter:description" content="Junior front-end developer and website designer in Cairo, Egypt. Responsive websites and landing pages with HTML, CSS and JavaScript, including clinic websites.">
+<meta name="twitter:image" content="https://youssef-osama.me/My-Portfolio/assets/profile.jpg">
+
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Ambient background -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============================================================
+      Navbar
+============================================================ -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="brand">
+      <span class="brand-mark"><img src="assets/favicon.ico" alt="Youssef Osama" data-ar-alt="يوسف أسامة" width="36" height="36" decoding="async"></span>
+      <span data-ar="يوسف أسامة">Youssef Osama</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a data-ar="الرئيسية" href="#home" class="active">Home</a>
+      <a data-ar="نبذة عني" href="#about">About</a>
+      <a data-ar="المهارات" href="#skills">Skills</a>
+      <a data-ar="المشاريع" href="#projects">Projects</a>
+      <a data-ar="الخدمات" href="#services">Services</a>
+      <a data-ar="تواصل" href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language to Arabic" lang="ar">العربية</button>
+      <a class="btn btn-ghost" data-ar="لنتحدث" href="#contact">Let's Talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-ar-aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     Hero
+============================================================ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-copy">
+      <div class="hero-status"><span class="dot"></span> <span data-ar="متاح لفرص مطوّر واجهات مبتدئ والمشاريع الحرة">Open to junior front-end roles &amp; freelance projects</span></div>
+      <h1><span data-ar="أهلاً، أنا ">Hi, I'm </span><span class="accent" id="typedName"></span></h1>
+      <div class="hero-role"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span><span id="typedRole"></span><span class="caret"></span></div>
+      <p class="hero-headline" data-ar="أصمّم وأبني مواقع حديثة ومتجاوبة مع مختلف الشاشات.">I design and build modern, responsive websites.</p>
+      <p class="lede" data-ar="أحوّل الأفكار إلى مواقع نظيفة وسهلة الاستخدام باستخدام HTML وCSS وJavaScript، مع التركيز على صفحات الهبوط ومواقع العيادات والمراكز الطبية. مقيم في القاهرة، مصر.">I turn ideas into clean, easy-to-use websites with HTML, CSS and JavaScript, with a focus on landing pages and websites for clinics and medical centers. Based in Cairo, Egypt.</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <span data-ar="استعرض مشاريعي">View My Projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" data-ar="تواصل معي" href="#contact">Contact Me</a>
+      </div>
+
+      <div class="hero-meta">
+        <div><span class="k" data-ar="الموقع">Location</span><span class="v" data-ar="القاهرة، مصر">Cairo, Egypt</span></div>
+        <div><span class="k" data-ar="التركيز">Focus</span><span class="v" data-ar="مواقع متجاوبة">Responsive Websites</span></div>
+        <div><span class="k" data-ar="المشاريع">Projects</span><span class="v" data-ar="عيادات ومراكز طبية">Clinics &amp; Medical Centers</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="console" aria-hidden="true">
+        <div class="console-bar">
+          <span class="cdot"></span><span class="cdot"></span><span class="cdot"></span>
+          <span class="clabel">index.html</span>
+        </div>
+        <div class="console-body">
+          <div class="console-line"><span class="kw">&lt;section</span> class=<span class="str">"hero"</span><span class="kw">&gt;</span></div>
+          <div class="console-line" style="padding-inline-start:16px"><span class="kw">&lt;h1&gt;</span>Responsive websites<span class="kw">&lt;/h1&gt;</span></div>
+          <div class="console-line"><span class="kw">&lt;/section&gt;</span></div>
+          <div class="console-line">&nbsp;</div>
+          <div class="console-line"><span class="fn">.hero</span> { display: <span id="typedQuery"></span></div>
+          <div class="console-line">&nbsp;</div>
+          <div class="console-line"><span class="kw">@media</span> (max-width: 760px) {</div>
+          <div class="console-line" style="padding-inline-start:16px"><span class="fn">.hero</span> { grid-template-columns: 1fr; }</div>
+          <div class="console-line">}</div>
+
+          <div class="console-stats">
+            <span>HTML · CSS · JavaScript</span>
+            <span data-ar-html="&lt;b&gt;تخطيطات&lt;/b&gt; متجاوبة"><b>Responsive</b> layouts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="badge-floating">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <div><span class="t" data-ar="تصميم متجاوب">Responsive design</span><span class="s" data-ar="هاتف · تابلت · كمبيوتر">Phone · Tablet · Desktop</span></div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue"><span data-ar="مرّر">SCROLL</span><span class="line"></span></a>
+</section>
+
+<!-- ============================================================
+     Stats strip (all numbers are verifiable facts about this portfolio)
+============================================================ -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-count="4">0</div>
+        <div class="stat-lbl" data-ar="مشاريع منشورة">Live Projects</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-count="2">0</div>
+        <div class="stat-lbl" data-ar="نماذج تصميم تجريبية">Concept Prototypes</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-count="3">0</div>
+        <div class="stat-lbl" data-ar="تقنيات أساسية">Core Technologies</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num" data-count="2">0</div>
+        <div class="stat-lbl" data-ar="لغتا الموقع (عربي / إنجليزي)">Portfolio Languages (AR / EN)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     About
+============================================================ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <div class="glow-ring" aria-hidden="true"></div>
+        <div class="frame">
+          <img src="assets/profile.jpg" alt="Portrait of Youssef Osama" data-ar-alt="صورة يوسف أسامة" width="900" height="1200" loading="lazy" decoding="async">
+        </div>
+        <div class="stat-chip">
+          <div class="num">4</div>
+          <div class="lbl" data-ar="مشاريع منشورة">Live Projects</div>
+        </div>
+      </div>
+
+      <div class="about-body reveal">
+        <div class="eyebrow" data-ar="نبذة عني">About Me</div>
+        <h2 data-ar="أبني مواقع واضحة ومتجاوبة." style="font-size:clamp(26px,3.4vw,36px); margin-bottom:22px;">Building clear, responsive websites.</h2>
+        <p data-ar-html="أنا مطوّر واجهات أمامية مبتدئ ومصمم مواقع، مقيم في القاهرة. أعمل بـ &lt;strong&gt;HTML&lt;/strong&gt; و&lt;strong&gt;CSS&lt;/strong&gt; و&lt;strong&gt;JavaScript&lt;/strong&gt; لبناء صفحات متجاوبة يسهل قراءتها واستخدامها على أي شاشة.">I'm a junior front-end developer and website designer based in Cairo. I work with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> to build responsive pages that are easy to read and easy to use on any screen.</p>
+        <p data-ar="معظم أعمالي الأخيرة في المجال الصحي: عيادات أسنان ومركز طبي وعيادة للقدم. أركّز على ما يحتاجه الزائر أولًا — الخدمات ومواعيد العمل والموقع وطريقة سريعة للتواصل مع العيادة — مع تخطيطات عربية وإنجليزية ووضعين فاتح وداكن حيث يتطلب المشروع ذلك.">Most of my recent work is in healthcare: dental clinics, a medical center and a foot clinic. I focus on what a visitor needs first — services, working hours, location and a quick way to reach the clinic — with Arabic and English layouts and light and dark themes where a project calls for them.</p>
+        <p data-ar="اثنان من هذه المشاريع نماذج تصميم تجريبية غير رسمية، وأذكر ذلك بوضوح. أفضّل أن أعرض عملي بصدق على أن أبالغ فيه.">Two of these projects are unofficial concept prototypes, and I label them that way. I would rather show my work honestly than inflate it.</p>
+
+        <div class="facts-grid">
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div class="k" data-ar="الموقع">Location</div><div class="v" data-ar="القاهرة، مصر">Cairo, Egypt</div></div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <div><div class="k" data-ar="الدور">Role</div><div class="v" data-ar="مطوّر واجهات أمامية مبتدئ">Junior Front-End Developer</div></div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div><div class="k" data-ar="التركيز الحالي">Current Focus</div><div class="v" data-ar="مواقع متجاوبة وواجهات مستخدم">Responsive Websites &amp; UI</div></div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+            <div><div class="k" data-ar="المشاريع">Projects</div><div class="v" data-ar="4 مواقع منشورة">4 websites online</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Skills
+============================================================ -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-ar="الأدوات">Toolkit</div>
+      <h2 data-ar="المهارات والأدوات">Skills &amp; Tools</h2>
+      <p data-ar="التقنيات والممارسات التي أعتمد عليها في تصميم المواقع وبنائها.">The technologies and practices behind the websites I design and build.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>HTML</h3>
+        <p data-ar="هيكلة الصفحات دلاليًا">Semantic page structure</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <h3>CSS</h3>
+        <p data-ar="التخطيطات وFlexbox وGrid">Layouts, Flexbox & Grid</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg>
+        </div>
+        <h3>JavaScript</h3>
+        <p data-ar="التفاعل وسلوك الواجهة">Interactivity & UI behavior</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 data-ar="التصميم المتجاوب">Responsive Design</h3>
+        <p data-ar="تخطيطات للهاتف والتابلت والكمبيوتر">Layouts for phone, tablet & desktop</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v6H3zM3 13h8v8H3zM15 13h6v8h-6z"/></svg>
+        </div>
+        <h3 data-ar="صفحات الهبوط">Landing Pages</h3>
+        <p data-ar="صفحات مبنية حول هدف واحد واضح">Pages built around one clear goal</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3 data-ar="تصميم الواجهات">UI Design</h3>
+        <p data-ar="التسلسل البصري والخطوط">Visual hierarchy & typography</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 00-.9-2.6c3-.3 6-1.5 6-6.6a5.1 5.1 0 00-1.3-3.5 4.6 4.6 0 00-.1-3.5s-1.1-.3-3.5 1.3a12 12 0 00-6.4 0C6.4 2.3 5.3 2.6 5.3 2.6a4.7 4.7 0 00-.1 3.5A5.1 5.1 0 003.9 9.6c0 5.1 3 6.3 6 6.6a3.4 3.4 0 00-.9 2.6V23"/></svg>
+        </div>
+        <h3 data-ar="Git وGitHub">Git & GitHub</h3>
+        <p data-ar="أساسيات التحكم بالإصدارات">Version control basics</p>
+      </div>
+
+      <div class="skill-card card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3 data-ar="العربية وRTL">Arabic & RTL</h3>
+        <p data-ar="واجهات ثنائية اللغة عربي / إنجليزي">Bilingual AR / EN interfaces</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Projects
+============================================================ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-ar="أعمال مختارة">Selected Work</div>
+      <h2 data-ar="المشاريع">Projects</h2>
+      <p data-ar="أربعة مشاريع مواقع لعيادات ومراكز طبية — صفّها حسب النوع.">Four website projects for clinics and medical centers — filter by type below.</p>
+    </div>
+
+    <div class="filters reveal">
+      <button class="filter-btn active" data-ar="جميع المشاريع" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-ar="مواقع العيادات" data-filter="clinic">Clinic Websites</button>
+      <button class="filter-btn" data-ar="المراكز الطبية" data-filter="medical">Medical Center</button>
+      <button class="filter-btn" data-ar="النماذج والمفاهيم التصميمية" data-filter="concept">Concepts &amp; Prototypes</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card card reveal" data-cat="clinic concept">
+        <a class="project-media" href="https://athr-eight.vercel.app/" target="_blank" rel="noopener"><img src="assets/projects/athr-concept-light.png" width="1920" height="928" loading="lazy" decoding="async" alt="Light-mode home page of the athr dental clinic concept: a dental chair photo and the headline “Dental care that starts with clarity”" data-ar-alt="الصفحة الرئيسية لتصوّر موقع عيادة athr في الوضع الفاتح: صورة كرسي أسنان وعنوان «رعاية أسنان تبدأ بالوضوح»"></a>
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <div class="project-links">
+            <a href="https://athr-eight.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo" data-ar-aria-label="فتح النسخة الحية">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 data-ar="athr — تصوّر موقع عيادة أسنان">athr — Dental Clinic Concept</h3>
+        <p data-ar="تصوّر تصميمي غير رسمي لموقع عيادة أسنان: تخطيط هادئ، دعم العربية والإنجليزية، وضعان فاتح وداكن، ونموذج طلب تواصل عبر واتساب.">An unofficial design concept for a dental clinic website: calm editorial layout, Arabic and English, light and dark themes, and a WhatsApp contact request form.</p>
+        <div class="project-badges">
+          <span class="tag" data-ar="نموذج غير رسمي">Unofficial Concept</span>
+          <span class="tag" data-ar="عيادة أسنان">Dental Clinic</span>
+          <span class="tag">HTML · CSS · JS</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-live" href="https://athr-eight.vercel.app/" target="_blank" rel="noopener"><span data-ar="عرض الموقع الحي">View live site</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <button class="expand-btn" aria-expanded="false">
+          <span class="expand-label">Case study</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        </div>
+        <div class="project-detail">
+          <div class="detail-inner">
+            <div class="detail-gallery">
+            <figure><img src="assets/projects/athr-concept-light.png" width="1920" height="928" loading="lazy" decoding="async" alt="Light-mode home page of the athr dental clinic concept: a dental chair photo and the headline “Dental care that starts with clarity”" data-ar-alt="الصفحة الرئيسية لتصوّر موقع عيادة athr في الوضع الفاتح: صورة كرسي أسنان وعنوان «رعاية أسنان تبدأ بالوضوح»"><figcaption data-ar="الوضع الفاتح">Light mode</figcaption></figure>
+            <figure><img src="assets/projects/athr-concept-dark.png" width="1920" height="928" loading="lazy" decoding="async" alt="Dark-mode contact request form of the athr concept with name and phone fields and a WhatsApp button" data-ar-alt="نموذج طلب التواصل في تصوّر athr بالوضع الداكن: حقلا الاسم والهاتف وزر فتح واتساب"><figcaption data-ar="الوضع الداكن">Dark mode</figcaption></figure>
+          </div>
+          <div class="detail-block"><b data-ar="نوع المشروع">Project Type</b><p data-ar="تصوّر تصميمي غير رسمي — موقع عيادة أسنان. ليس الموقع الرسمي للعيادة.">Unofficial design concept — dental clinic website. It is not the clinic's official site.</p></div>
+            <div class="detail-block"><b data-ar="المشكلة">Problem</b><p data-ar="كيف يمكن لعيادة أسنان أن تعرض فكرة التخطيط الرقمي ووضوح خطوات العلاج وسهولة التواصل في صفحة واحدة هادئة؟ هذا تصوّر ذاتي المبادرة وليس طلبًا من عميل.">How can a dental clinic present its digital planning, clear treatment steps and easy contact on one calm page? This is a self-initiated concept, not a client request.</p></div>
+            <div class="detail-block"><b data-ar="طريقة التنفيذ">Approach</b><p data-ar="تخطيط عربي من اليمين لليسار مع زر للإنجليزية ومبدّل للوضع الفاتح والداكن. نموذج تواصل قصير يفتح واتساب برسالة جاهزة للإرسال دون حفظ أي بيانات. الصفحة موسومة بوضوح بأنها غير رسمية، والخدمات غير المؤكدة مشار إليها.">Arabic-first right-to-left layout with an English toggle and a light/dark theme switch. A short contact form opens WhatsApp with a ready-to-send message without storing data. The page is clearly labeled unofficial, and unconfirmed services are marked as such.</p></div>
+            <div class="detail-block"><b data-ar="النتيجة">Result</b><p data-ar="نموذج عملي من صفحة واحدة يتضمن أسئلة شائعة وبيانات تواصل عامة. وهو واضح بشأن وضعه: يذكر أنه لا يمثل العيادة وأن كل المحتوى يحتاج إلى موافقتها.">A working single-page concept with an FAQ and public contact details. It is open about its status: it states that it does not represent the clinic and that all content needs the clinic's approval.</p></div>
+            <div class="detail-block"><b data-ar="التقنيات المستخدمة">Technologies</b><p data-ar="HTML · CSS · JavaScript · مستضاف على Vercel">HTML · CSS · JavaScript · Hosted on Vercel</p></div>
+            <div class="detail-block"><a class="detail-link" href="https://athr-eight.vercel.app/" target="_blank" rel="noopener" data-ar="عرض النسخة الحية ↗">View live demo ↗</a></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card card reveal" data-cat="clinic concept">
+        <a class="project-media" href="https://alyasmeendentalclinic.vercel.app/" target="_blank" rel="noopener"><img src="assets/projects/alyasmeen-dental-light.png" width="1920" height="928" loading="lazy" decoding="async" alt="Light-mode home page of the El Yasmeen Dental Clinic sample site with a clinic room photo and a WhatsApp booking button" data-ar-alt="الصفحة الرئيسية لنموذج موقع عيادة أسنان الياسمين في الوضع الفاتح: صورة غرفة الكشف وزر حجز عبر واتساب"></a>
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>
+          </div>
+          <div class="project-links">
+            <a href="https://alyasmeendentalclinic.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo" data-ar-aria-label="فتح النسخة الحية">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 data-ar="عيادة أسنان الياسمين — نموذج تعريفي">El Yasmeen Dental Clinic — Concept</h3>
+        <p data-ar="موقع نموذجي غير رسمي لعيادة أسنان في حلوان مبني على بيانات عامة: الخدمات وملف الطبيب والخريطة ومواعيد العمل وأزرار اتصال وواتساب سريعة.">An unofficial sample site for a dental clinic in Helwan, built from public listings: services, doctor profile, map, working hours and quick call and WhatsApp actions.</p>
+        <div class="project-badges">
+          <span class="tag" data-ar="نموذج غير رسمي">Unofficial Concept</span>
+          <span class="tag" data-ar="عيادة أسنان">Dental Clinic</span>
+          <span class="tag">HTML · CSS · JS</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-live" href="https://alyasmeendentalclinic.vercel.app/" target="_blank" rel="noopener"><span data-ar="عرض الموقع الحي">View live site</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <button class="expand-btn" aria-expanded="false">
+          <span class="expand-label">Case study</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        </div>
+        <div class="project-detail">
+          <div class="detail-inner">
+            <div class="detail-gallery">
+            <figure><img src="assets/projects/alyasmeen-dental-light.png" width="1920" height="928" loading="lazy" decoding="async" alt="Light-mode home page of the El Yasmeen Dental Clinic sample site with a clinic room photo and a WhatsApp booking button" data-ar-alt="الصفحة الرئيسية لنموذج موقع عيادة أسنان الياسمين في الوضع الفاتح: صورة غرفة الكشف وزر حجز عبر واتساب"><figcaption data-ar="الوضع الفاتح">Light mode</figcaption></figure>
+            <figure><img src="assets/projects/alyasmeen-dental-dark.png" width="1920" height="928" loading="lazy" decoding="async" alt="Dark-mode doctor profile and clinic details of the El Yasmeen sample site, with a map" data-ar-alt="ملف الطبيب وبيانات العيادة مع الخريطة في نموذج الياسمين بالوضع الداكن"><figcaption data-ar="الوضع الداكن">Dark mode</figcaption></figure>
+          </div>
+          <div class="detail-block"><b data-ar="نوع المشروع">Project Type</b><p data-ar="نموذج غير رسمي — موقع عيادة أسنان. التفاصيل موسومة بأنها قيد تأكيد العيادة.">Unofficial sample — dental clinic website. Details are marked as pending the clinic's confirmation.</p></div>
+            <div class="detail-block"><b data-ar="المشكلة">Problem</b><p data-ar="غالبًا ما تتفرق بيانات العيادة بين الأدلة وقوائم الخرائط. يستكشف هذا النموذج جمع الخدمات وملف الطبيب والموقع والمواعيد في صفحة واحدة واضحة. هو مبادرة ذاتية وليس طلبًا من عميل.">A clinic's details are often scattered across directory and map listings. This sample explores gathering services, doctor profile, location and hours on one clear page. It is self-initiated, not a client request.</p></div>
+            <div class="detail-block"><b data-ar="طريقة التنفيذ">Approach</b><p data-ar="تخطيط عربي من اليمين لليسار مع مبدّل للوضع الفاتح والداكن وقسم للخدمات وملف للطبيب وخريطة مدمجة وأزرار اتصال وواتساب. المعلومات المأخوذة من مصادر عامة موسومة بأنها تحتاج إلى تأكيد، وشارة ثابتة تبيّن أن الصفحة نموذج غير رسمي.">Right-to-left Arabic layout with a light/dark theme toggle, a services section, a doctor profile, an embedded map, and call and WhatsApp buttons. Information from public sources is flagged as needing confirmation, and a persistent badge marks the page as an unofficial sample.</p></div>
+            <div class="detail-block"><b data-ar="النتيجة">Result</b><p data-ar="نموذج من صفحة واحدة يُبقي إجراءات التواصل في المتناول ويوضح بشفافية أي التفاصيل غير مؤكدة.">A single-page sample that keeps contact actions within reach and is transparent about which details are unverified.</p></div>
+            <div class="detail-block"><b data-ar="التقنيات المستخدمة">Technologies</b><p data-ar="HTML · CSS · JavaScript · خريطة Google مدمجة · مستضاف على Vercel">HTML · CSS · JavaScript · Google Maps embed · Hosted on Vercel</p></div>
+            <div class="detail-block"><a class="detail-link" href="https://alyasmeendentalclinic.vercel.app/" target="_blank" rel="noopener" data-ar="عرض النسخة الحية ↗">View live demo ↗</a></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card card reveal" data-cat="medical">
+        <a class="project-media" href="https://astermedicalcenter.github.io/AsterMedicalCenter/index.html" target="_blank" rel="noopener"><img src="assets/projects/aster-medical-center.png" width="1920" height="928" loading="lazy" decoding="async" alt="Home page of the Aster Medical Center website in Arabic: a doctor’s portrait, the headline and booking buttons" data-ar-alt="الصفحة الرئيسية لموقع مركز أستر الطبي بالعربية: صورة الطبيب والعنوان وأزرار الحجز"></a>
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="project-links">
+            <a href="https://astermedicalcenter.github.io/AsterMedicalCenter/index.html" target="_blank" rel="noopener" aria-label="Open live demo" data-ar-aria-label="فتح النسخة الحية">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 data-ar="مركز أستر الطبي">Aster Medical Center</h3>
+        <p data-ar="موقع عربي متعدد الصفحات لمركز طبي وأسنان في المقطم، بصفحة لكل خدمة ومدوّنة ونسخة إنجليزية وأزرار اتصال وواتساب سريعة.">A multi-page Arabic website for a dental and medical center in Mokattam, with a page for each service, a blog, an English version and quick call and WhatsApp actions.</p>
+        <div class="project-badges">
+          <span class="tag" data-ar="مركز طبي">Medical Center</span>
+          <span class="tag" data-ar="عربي / إنجليزي">AR / EN</span>
+          <span class="tag">HTML · CSS · JS</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-live" href="https://astermedicalcenter.github.io/AsterMedicalCenter/index.html" target="_blank" rel="noopener"><span data-ar="عرض الموقع الحي">View live site</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <button class="expand-btn" aria-expanded="false">
+          <span class="expand-label">Case study</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        </div>
+        <div class="project-detail">
+          <div class="detail-inner">
+            <div class="detail-block"><b data-ar="نوع المشروع">Project Type</b><p data-ar="موقع مركز طبي (منشور للعامة).">Medical center website (publicly live).</p></div>
+            <div class="detail-block"><b data-ar="المشكلة">Problem</b><p data-ar="مركز يقدّم خدمات أسنان كثيرة على مدار الساعة يحتاج أن يرى الزائر ما يقدّمه ويصل إليه بسرعة، عبر الهاتف أو واتساب أو الخريطة.">A center offering many dental services around the clock needs visitors to see what it offers and reach it quickly — by phone, WhatsApp or map.</p></div>
+            <div class="detail-block"><b data-ar="طريقة التنفيذ">Approach</b><p data-ar="صفحة رئيسية عربية من اليمين لليسار بشبكة خدمات تقود إلى صفحة مخصصة لكل علاج، وقسم للمقالات، ونسخة إنجليزية منفصلة، ونموذج تسجيل لعرض خصم مع نافذة تأكيد، وزر واتساب عائم، ورابط للخريطة.">Right-to-left Arabic homepage with a service grid that links to a dedicated page for each treatment, a blog section, a separate English version, a discount-offer sign-up form with a confirmation window, a floating WhatsApp button and a map link.</p></div>
+            <div class="detail-block"><b data-ar="النتيجة">Result</b><p data-ar="موقع ثابت متعدد الصفحات ببنية تعرض كل خدمة على حدة وبعدة طرق تواصل مباشرة، منشور على GitHub Pages.">A static multi-page site with a service-by-service structure and several direct contact paths, published on GitHub Pages.</p></div>
+            <div class="detail-block"><b data-ar="التقنيات المستخدمة">Technologies</b><p data-ar="HTML · CSS · JavaScript · مستضاف على GitHub Pages">HTML · CSS · JavaScript · Hosted on GitHub Pages</p></div>
+            <div class="detail-block"><a class="detail-link" href="https://astermedicalcenter.github.io/AsterMedicalCenter/index.html" target="_blank" rel="noopener" data-ar="عرض النسخة الحية ↗">View live demo ↗</a></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card card reveal" data-cat="clinic">
+        <a class="project-media" href="https://maadi-foot-clinic-pro.vercel.app/" target="_blank" rel="noopener"><img src="assets/projects/maadi-foot-clinic.png" width="1920" height="928" loading="lazy" decoding="async" alt="Dark home page of the Maadi Foot Clinic website: an Arabic headline, a care photo and a book-now button" data-ar-alt="الصفحة الرئيسية الداكنة لموقع عيادة Maadi Foot Clinic: عنوان عربي وصورة رعاية وزر احجز موعدك"></a>
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <div class="project-links">
+            <a href="https://maadi-foot-clinic-pro.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo" data-ar-aria-label="فتح النسخة الحية">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 data-ar="Maadi Foot Clinic">Maadi Foot Clinic</h3>
+        <p data-ar="موقع عيادة للعناية بالقدم في المعادي بتصميم داكن جريء، ومبدّل للوضع الفاتح، وتبديل بين العربية والإنجليزية، ونموذج حجز وتواصل عبر واتساب.">A foot-care clinic website in Maadi with a bold dark theme, a light-mode toggle, an Arabic/English switch, a booking form and WhatsApp contact.</p>
+        <div class="project-badges">
+          <span class="tag" data-ar="موقع عيادة">Clinic Website</span>
+          <span class="tag" data-ar="عربي / إنجليزي">AR / EN</span>
+          <span class="tag">HTML · CSS · JS</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-live" href="https://maadi-foot-clinic-pro.vercel.app/" target="_blank" rel="noopener"><span data-ar="عرض الموقع الحي">View live site</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <button class="expand-btn" aria-expanded="false">
+          <span class="expand-label">Case study</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        </div>
+        <div class="project-detail">
+          <div class="detail-inner">
+            <div class="detail-block"><b data-ar="نوع المشروع">Project Type</b><p data-ar="موقع عيادة (منشور للعامة).">Clinic website (publicly live).</p></div>
+            <div class="detail-block"><b data-ar="المشكلة">Problem</b><p data-ar="المرضى الباحثون عن رعاية متخصصة للقدم يحتاجون إلى الوصول للخدمات ومواعيد العمل وطريقة الحجز دون عناء في التنقل داخل الصفحة.">Patients looking for specialized foot care need to find services, working hours and a way to book without hunting through the page.</p></div>
+            <div class="detail-block"><b data-ar="طريقة التنفيذ">Approach</b><p data-ar="تصميم داكن عالي التباين بلمسة لونية فيروزية، مع مبدّل للوضع الفاتح والداكن وتبديل بين العربية والإنجليزية. تضع الواجهة الرئيسية الحجز وواتساب أولًا، ومواعيد العمل والموقع في شريط ظاهر، ونموذج حجز يجمع الاسم والهاتف والخدمة والتاريخ.">A dark, high-contrast design with a teal accent, a light/dark theme toggle and an Arabic/English switch. The hero puts booking and WhatsApp first, working hours and location sit in a visible bar, and a booking form collects name, phone, service and date.</p></div>
+            <div class="detail-block"><b data-ar="النتيجة">Result</b><p data-ar="موقع عيادة من صفحة واحدة مقسّم إلى أقسام: عن العيادة والخدمات والأطباء والحجز والتواصل.">A single-page clinic site organized into about, services, doctors, booking and contact sections.</p></div>
+            <div class="detail-block"><b data-ar="التقنيات المستخدمة">Technologies</b><p data-ar="HTML · CSS · JavaScript · مستضاف على Vercel">HTML · CSS · JavaScript · Hosted on Vercel</p></div>
+            <div class="detail-block"><a class="detail-link" href="https://maadi-foot-clinic-pro.vercel.app/" target="_blank" rel="noopener" data-ar="عرض النسخة الحية ↗">View live demo ↗</a></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="project-note" data-ar="// النماذج غير الرسمية مذكورة بصفتها هذه — وأصف فقط ما يفعله كل موقع فعليًا.">// Unofficial concepts are labeled as such — I only describe what each site actually does.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     Services
+============================================================ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-ar="الخدمات">Services</div>
+      <h2 data-ar="ما الذي أقدّمه">What I Offer</h2>
+      <p data-ar="أنواع العمل التي يمكنني تنفيذها، بناءً على المشاريع أعلاه.">The kinds of work I can take on, based on the projects above.</p>
+    </div>
+
+    <div class="certs-grid">
+      <div class="cert-card card reveal">
+        <div class="cert-ribbon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 data-ar="مواقع متجاوبة">Responsive Websites</h3>
+        <div class="issuer" data-ar="هاتف · تابلت · كمبيوتر">Phone · Tablet · Desktop</div>
+        <div class="date" data-ar="تخطيطات تتكيّف بسلاسة مع أحجام الشاشات المختلفة.">Layouts that adapt smoothly to different screen sizes.</div>
+      </div>
+
+      <div class="cert-card card reveal">
+        <div class="cert-ribbon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>
+        </div>
+        <h3 data-ar="مواقع العيادات والمراكز الطبية">Clinic & Medical Websites</h3>
+        <div class="issuer" data-ar="الخدمات · المواعيد · الحجز">Services · Hours · Booking</div>
+        <div class="date" data-ar="صفحات واضحة تضع الخدمات والموقع ومواعيد العمل وطرق التواصل في المقدمة.">Clear pages that put services, location, working hours and contact options first.</div>
+      </div>
+
+      <div class="cert-card card reveal">
+        <div class="cert-ribbon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v6H3zM3 13h8v8H3zM15 13h6v8h-6z"/></svg>
+        </div>
+        <h3 data-ar="صفحات الهبوط">Landing Pages</h3>
+        <div class="issuer" data-ar="صفحة واحدة · رسالة واحدة">Single page · One message</div>
+        <div class="date" data-ar="صفحات مركّزة تدور حول رسالة واحدة وخطوة تالية واضحة.">Focused pages built around one message and one clear next step.</div>
+      </div>
+
+      <div class="cert-card card reveal">
+        <div class="cert-ribbon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3 data-ar="واجهات المواقع">Website UI</h3>
+        <div class="issuer" data-ar="الخطوط · التخطيط · الألوان">Type · Layout · Color</div>
+        <div class="date" data-ar="اهتمام بالتسلسل البصري والمسافات وأسلوب بصري متسق.">Attention to hierarchy, spacing and a consistent visual style.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Contact
+============================================================ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <div class="contact-copy">
+        <div class="eyebrow" data-ar="تواصل معي">Get In Touch</div>
+        <h2 data-ar="لنبنِ موقعك.">Let's build your website.</h2>
+        <p data-ar="متاح لفرص مطوّر واجهات أمامية مبتدئ والتدريب والمشاريع الحرة لتصميم المواقع. تواصل معي مباشرة أو اضغط على البطاقة لنسخ البيانات.">Open to junior front-end roles, internships and freelance website projects. Reach out directly or tap a card to copy the details.</p>
+
+        <div class="contact-list">
+          <div class="contact-item" data-copy="youssef.2001osama@gmail.com">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></div>
+            <div class="txt"><span class="k" data-ar="البريد الإلكتروني">Email</span><span class="v">youssef.2001osama@gmail.com</span></div>
+            <span class="copy-toast" data-ar="تم النسخ!">Copied!</span>
+          </div>
+          <div class="contact-item" data-copy="+20 100 669 8520">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div class="txt"><span class="k" data-ar="الهاتف / واتساب">Phone / WhatsApp</span><span class="v" dir="ltr">+20 100 669 8520</span></div>
+            <span class="copy-toast" data-ar="تم النسخ!">Copied!</span>
+          </div>
+          <div class="contact-item" data-copy="Cairo, Egypt" data-copy-ar="القاهرة، مصر">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="txt"><span class="k" data-ar="الموقع">Location</span><span class="v" data-ar="القاهرة، مصر">Cairo, Egypt</span></div>
+            <span class="copy-toast" data-ar="تم النسخ!">Copied!</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="socials-panel">
+        <a class="social-card" href="mailto:youssef.2001osama@gmail.com">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></div>
+          <div class="txt"><strong data-ar="أرسل بريدًا إلكترونيًا">Send an Email</strong><span>youssef.2001osama@gmail.com</span></div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+        <a class="social-card" href="https://wa.me/201006698520" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div class="txt"><strong>WhatsApp</strong><span dir="ltr">+20 100 669 8520</span></div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+        <a class="social-card" href="https://www.linkedin.com/in/yosama" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 018 0v9h-4v-8a2 2 0 00-4 0v8h-4z"/></svg></div>
+          <div class="txt"><strong>LinkedIn</strong><span>in/yosama</span></div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+        <a class="social-card" href="https://github.com/Youssef-Os2" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.61-3.37-1.21-3.37-1.21-.46-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1 .07 1.53 1.04 1.53 1.04.89 1.54 2.34 1.1 2.91.84.09-.65.35-1.1.63-1.35-2.22-.26-4.56-1.13-4.56-5.03 0-1.11.39-2.02 1.03-2.73-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.04a9.4 9.4 0 015 0c1.91-1.31 2.75-1.04 2.75-1.04.55 1.41.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.73 0 3.91-2.34 4.77-4.57 5.02.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></div>
+          <div class="txt"><strong>GitHub</strong><span>Youssef-Os2</span></div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Footer
+============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <p data-ar-html="© 2026 يوسف أسامة. صُنع بـ &lt;span class=&quot;heart&quot;&gt;❤&lt;/span&gt;">© 2026 Youssef Osama. Built with <span class="heart">❤</span></p>
+    <div class="footer-links">
+      <a href="mailto:youssef.2001osama@gmail.com" aria-label="Email" data-ar-aria-label="البريد الإلكتروني">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+      </a>
+      <a href="https://wa.me/201006698520" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/yosama" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 018 0v9h-4v-8a2 2 0 00-4 0v8h-4z"/></svg>
+      </a>
+      <a href="https://github.com/Youssef-Os2" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.61-3.37-1.21-3.37-1.21-.46-1.16-1.11-1.47-1.11-1.47-.91-.63.07-.62.07-.62 1 .07 1.53 1.04 1.53 1.04.89 1.54 2.34 1.1 2.91.84.09-.65.35-1.1.63-1.35-2.22-.26-4.56-1.13-4.56-5.03 0-1.11.39-2.02 1.03-2.73-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.04a9.4 9.4 0 015 0c1.91-1.31 2.75-1.04 2.75-1.04.55 1.41.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.73 0 3.91-2.34 4.77-4.57 5.02.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" data-ar-aria-label="العودة للأعلى">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
